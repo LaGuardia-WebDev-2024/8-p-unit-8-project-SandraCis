@@ -9,6 +9,7 @@ body {
   color: navy;
   margin: auto;
   font-family: water;
+  text-decoration: underline;
 }
 
 h1{
@@ -19,6 +20,11 @@ h1{
 p{
   font-size: 18px;
   margin-bottom: 10px;
+}
+ul{
+  list-style-type: disc;
+  padding: 0 20px;
+  font-size; 16px;
 }
 #myCanvas {
   background-image: url("https://seaviewinfo.com/wp-content/uploads/2018/07/SeaScape.jpg");

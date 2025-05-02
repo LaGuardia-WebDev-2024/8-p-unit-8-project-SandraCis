@@ -11,11 +11,17 @@ setup = function() {
     drawFish(500, 250, color(200,0,200));
     drawFish(450, 215, color(200,0,200));
       drawFish(415, 240, color(200,0,200));
+      drawSeaweed(300,400,  color(200,150,100));
+drawSeaweed(200,400,  color(200,150,100));
+drawSeaweed(400,400,  color(200,150,100));
+drawSeaweed(260,390,  color(200,150,100));
+drawSeaweed(380,400,  color(200,150,100)); 
 };   
 
 //🟢draw Function - will run on repeat
 draw = function(){
-
+drawShark(400,200, color(100,250,130));
+drawShark(60,150, color(100,250,130));
 };
 
 //🟢mouseClicked Function - will run when mouse is clicked
@@ -23,8 +29,9 @@ mouseClicked = function(){
 drawmermaid(100,250 ,color (0,150,255));
 };
 
+
 //🟡drawCrab Function - will run when called
-var drawCrab = function(CrabX, CrabY, CrabColor){
+var drawCrab = function(CrabX,CrabY,CrabColor){
   textSize(50);
   fill(CrabColor);
   text("🦀", CrabX, CrabY);
@@ -41,6 +48,21 @@ var drawWhale = function(WhaleX, WhaleY, WhaleColor){
   fill(WhaleColor);
   text("🐋", WhaleX, WhaleY);
 };
+//🟡drawSeaweed Function - will run when called
+var drawSeaweed = function(SeaweedX, SeaweedY, SeaweedColor){
+  textSize(80);
+  fill(SeaweedColor);
+  text("⸾", SeaweedX, SeaweedY);
+};
+
+//🟡drawShark Function - will run when called
+var drawShark = function(SharkX, SharkY, SharkColor){
+
+  textSize(80);
+  fill(SharkColor);
+  text ("🦈", SharkX, SharkY);
+
+};
 
 //🟡drawShell Function - will run when called
 var drawShell = function(ShellX, ShellY, ShellColor){
@@ -48,12 +70,7 @@ var drawShell = function(ShellX, ShellY, ShellColor){
   fill(ShellColor);
   text("🐚", ShellX, ShellY);
 };
-//🟡drawShell Function - will run when called
-var drawShell = function(ShellX, ShellY, ShellColor){
-  textSize(60);
-  fill(ShellColor);
-  text("🐚", ShellX, ShellY);
-  };
+
   //🟡drawFish Function - will run when called
 var drawFish = function(fishX, fishY, fishColor){
   textSize(40);
@@ -66,12 +83,7 @@ var drawFish = function(fishX, fishY, fishColor){
   fill(fishColor);
   text("🐟", fishX, fishY);
   };
-     //🟡drawFish Function - will run when called
-var drawFish = function(fishX, fishY, fishColor){
-  textSize(40);
-  fill(fishColor);
-  text("🐟", fishX, fishY);
-  };
+   
 //🟡drawmermaid Function - will run when called
 var drawmermaid = function(mermaidX, mermaidY, mermaidColor){
   textSize(40);
